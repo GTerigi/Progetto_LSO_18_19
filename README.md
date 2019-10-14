@@ -21,7 +21,7 @@ L'objectstore gestisce uno spazio di memorizzazione separato per ogni client. I 
 
 Per collegarsi all'_objectstore_ il client manda un messaggio di richiesta, con un formato conosciuto; in risposta il server crea un thread per gestire le eventuali richieste del client. Il thread servente termina quando il client manda un messaggio esplicito di deregistrazione oppure se si verifica un errore.
 
-Internamente, l'_obectstore_ memorizza gli oggetti che gli vengono affidati (e altri eventuali dati che si
+Internamente, l'_objectstore_ memorizza gli oggetti che gli vengono affidati (e altri eventuali dati che si
 rendessero necessari) nel file system, all'interno di file che hanno per nome il nome dell'oggetto. Questi file
 sono poi contenuti in directory che hanno per nome il nome del client a cui l'oggetto appartiene. Tutte le
 directory dei client sono contenute in una directory data all'interno della working directory del server.
